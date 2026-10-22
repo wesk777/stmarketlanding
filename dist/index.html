@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="STMarket — рабочий кабинет продавца Wildberries: отзывы, диалоги, жалобы и реальная прибыль в одном контуре."
+      content="ST Market связывает ИИ-ответы на отзывы, диалоги с покупателями, жалобы на WB и юнит-экономику в одном кабинете."
     />
-    <title>STMarket — рабочий кабинет продавца Wildberries</title>
+    <meta name="theme-color" content="#160b22" />
+    <title>ST Market, отзывы, клиенты и прибыль Wildberries</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,397 +16,394 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add('js');
+    </script>
   </head>
   <body>
-    <div class="page-shell">
-      <section class="hero-shell" id="top">
-        <div class="noise" aria-hidden="true"></div>
-        <header class="site-header container">
-          <a class="brand" href="#top" aria-label="STMarket — на главную">
-            <span class="brand-mark"><i></i><i></i></span>
-            <span>ST<span>Market</span></span>
-          </a>
+    <a class="skip-link" href="#content">К содержанию</a>
 
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-            <span class="sr-only">Открыть меню</span>
-            <span></span><span></span>
-          </button>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="ST Market, в начало страницы">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i></span>
+        <span>ST Market</span>
+      </a>
 
-          <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
-            <a href="#features">Возможности</a>
-            <a href="#cases">Кейсы</a>
-            <a href="#how-it-works">Как работает</a>
-            <a href="#faq">FAQ</a>
-          </nav>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>
+        Меню
+      </button>
 
-          <div class="header-actions">
-            <a class="login-link" href="https://app.sergeevtech.ru/login">Войти</a>
-            <a class="button button--small button--blue" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">
-              Разобрать кабинет
-              <span class="button-arrow">↗</span>
-            </a>
+      <nav class="site-nav" id="site-nav" aria-label="Навигация" data-menu>
+        <a href="#contour">Контур</a>
+        <a href="#features">Возможности</a>
+        <a href="#numbers">Цифры</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="login-link" href="https://app.sergeevtech.ru/">Войти</a>
+        <a class="button button--header" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Разобрать магазин</a>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top">
+        <div class="hero__copy">
+          <p class="hero__prelude">ST Market для продавцов Wildberries</p>
+          <h1 class="hero__title">
+            <span>Поднимайте рейтинг.</span>
+            <span>Держите пульс.</span>
+          </h1>
+          <p class="hero__lead">
+            ST Market возвращает негативных покупателей в диалог, помогает отправлять обоснованные жалобы и показывает реальную экономику каждого товара в реальном времени.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Разобрать магазин</a>
+            <a class="text-link" href="#contour">Посмотреть контур работы</a>
           </div>
-        </header>
+        </div>
 
-        <main>
-          <section class="hero container">
-            <div class="hero-copy reveal">
-              <p class="eyebrow eyebrow--light"><span></span> Для продавцов Wildberries</p>
-              <h1>Карточки не должны молчать.<br /><em>Деньги не должны утекать.</em></h1>
-              <p class="hero-description">
-                STMarket помогает отвечать на отзывы, отрабатывать негатив, возвращать покупателей в диалог и видеть реальную прибыль по каждому товару — из одного кабинета.
-              </p>
-              <div class="hero-actions">
-                <a class="button button--primary" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">
-                  Разобрать мой кабинет <span class="button-arrow">↗</span>
-                </a>
-                <a class="button button--ghost" href="#how-it-works">
-                  <span class="play-icon">▶</span> Посмотреть, как это работает
-                </a>
+        <aside class="hero__pulse" data-ui aria-label="Пример раздела Пульс магазина">
+          <div class="hero-pulse__top"><span class="ui-brand"><b>ST</b> Пульс магазина</span><span>сейчас</span></div>
+          <div class="hero-pulse__rating">
+            <div><span>Рейтинг карточки</span><strong>4,6</strong></div>
+            <p>Работаем с негативом, который влияет на оценку товара.</p>
+          </div>
+          <div class="hero-pulse__signals">
+            <p><span>Диалоги с покупателями</span><b>72</b></p>
+            <p><span>Жалобы в проверке</span><b>16</b></p>
+            <p><span>Операционная маржа</span><b>24,7%</b></p>
+          </div>
+          <div class="hero-pulse__footer"><span>Карточка → корзина → заказ → выкуп</span><b>Джем</b></div>
+        </aside>
+
+        <div class="hero__meta" aria-label="Ключевая статистика">
+          <span>1&nbsp;600&nbsp;000+ отзывов уже прошли через систему</span>
+          <span>1&nbsp;400&nbsp;000 ответов отправлено</span>
+        </div>
+      </section>
+
+      <section class="statement section-light" aria-labelledby="statement-title">
+        <div class="statement__heading" data-reveal="text">
+          <h2 id="statement-title">Рейтинг карточки не должен зависеть от одного отзыва.</h2>
+        </div>
+        <div class="statement__body" data-reveal="text">
+          <p>
+            ST Market возвращает покупателя в диалог, помогает защитить карточку от нерелевантных отзывов и даёт владельцу магазина живую картину по деньгам, марже и воронке товара.
+          </p>
+          <a class="text-link text-link--dark" href="#features">Посмотреть реальные сценарии</a>
+        </div>
+      </section>
+
+      <section class="route" id="contour" aria-labelledby="route-title">
+        <div class="route__intro">
+          <p class="section-note">Три контура роста магазина</p>
+          <h2 id="route-title">Защищайте рейтинг. Чувствуйте пульс магазина.</h2>
+          <p>
+            Сначала возвращаем покупателя в диалог. Затем отправляем обоснованную жалобу, если отзыв не относится к товару. После этого смотрим, что происходит с маржой и воронкой.
+          </p>
+          <p class="route__hint">Интерфейс показан на обезличенных примерах.</p>
+        </div>
+
+        <div class="route__workbench" data-ui data-route data-stage="0">
+          <div class="route__controls">
+            <p class="route__active" data-route-status>Возвращаем покупателя в диалог</p>
+            <label class="sr-only" for="route-range">Выберите главный контур работы ST Market</label>
+            <input id="route-range" class="route__range" type="range" min="0" max="3" value="0" step="1" data-route-range />
+            <div class="route__tabs" role="tablist" aria-label="Главные контуры работы ST Market">
+              <button type="button" role="tab" aria-selected="true" data-route-tab="0">Диалог</button>
+              <button type="button" role="tab" aria-selected="false" data-route-tab="1">Жалоба</button>
+              <button type="button" role="tab" aria-selected="false" data-route-tab="2">Пульс</button>
+              <button type="button" role="tab" aria-selected="false" data-route-tab="3">ИИ-ответ</button>
+            </div>
+          </div>
+
+          <div class="route__canvas">
+            <article class="route-screen route-screen--reply" data-route-screen="3" hidden>
+              <div class="ui-topline">
+                <span class="ui-brand"><b>ST</b> Лента отзывов</span>
+                <span>ждёт решения</span>
+              </div>
+              <div class="review-row">
+                <div class="product-swatch product-swatch--orange" aria-hidden="true"></div>
+                <div class="review-row__text">
+                  <strong>Товар, артикул 880214</strong>
+                  <span>Оценка 2 / 5. «Качество не устроило»</span>
+                </div>
+                <span class="status-dot">новый</span>
+              </div>
+              <div class="ai-answer">
+                <span>Черновик ИИ</span>
+                <p>Здравствуйте. Нам жаль, что товар не оправдал ожиданий. Напишите, пожалуйста, что именно не устроило, мы поможем решить вопрос.</p>
+                <div class="ui-actions"><b>Опубликовать</b><span>Другой вариант</span></div>
+              </div>
+              <p class="route-screen__caption">Выберите автоответ, подтверждение или ручной режим для каждой оценки.</p>
+            </article>
+
+            <article class="route-screen route-screen--chat" data-route-screen="0">
+              <div class="chat-layout">
+                <div class="chat-queue">
+                  <p>Диалоги <b>72</b></p>
+                  <div class="queue-item queue-item--active"><i></i><span>Покупатель</span><small>Новый ответ</small></div>
+                  <div class="queue-item"><i></i><span>Покупатель</span><small>В работе</small></div>
+                  <div class="queue-item"><i></i><span>Покупатель</span><small>Ожидаем</small></div>
+                </div>
+                <div class="chat-thread">
+                  <div class="ui-topline"><span>Диалог по отзыву</span><span>автоматизация активна</span></div>
+                  <div class="message message--buyer">Добрый день. Товар пришёл с дефектом.</div>
+                  <div class="message message--manager">Здравствуйте. Пришлите фото, пожалуйста, и мы предложим решение.</div>
+                  <div class="message message--buyer">Фото отправил, спасибо.</div>
+                  <div class="composer">Написать покупателю <b>Отправить</b></div>
+                </div>
+              </div>
+              <p class="route-screen__caption">Рассылка запускает диалог с покупателями, а менеджер подключается в том же окне.</p>
+            </article>
+
+            <article class="route-screen route-screen--complaint" data-route-screen="1" hidden>
+              <div class="ui-topline">
+                <span class="ui-brand"><b>ST</b> Жалобы на отзывы</span>
+                <span>контекст разобран</span>
+              </div>
+              <div class="complaint-grid">
+                <div>
+                  <small>Основание</small>
+                  <strong>Отзыв не относится к товару</strong>
+                  <p>Причина выбрана по тексту отзыва и данным товара.</p>
+                </div>
+                <div>
+                  <small>Статус</small>
+                  <strong>Готово к проверке</strong>
+                  <p>Система отслеживает движение обращения после отправки.</p>
+                </div>
+              </div>
+              <div class="support-draft">
+                <span>Черновик обращения в поддержку WB</span>
+                <p>Просим проверить отзыв. В тексте описана ситуация, не связанная с характеристиками товара.</p>
+                <b>Отправить на проверку</b>
+              </div>
+              <p class="route-screen__caption">ST Market предлагает основание и текст, а решение по модерации остаётся за Wildberries.</p>
+            </article>
+
+            <article class="route-screen route-screen--economy" data-route-screen="2" hidden>
+              <div class="ui-topline">
+                <span class="ui-brand"><b>ST</b> Юнитка · Факт → Сценарий</span>
+                <span>обновлено сейчас</span>
+              </div>
+              <div class="economy-kpis">
+                <div><span>Цена</span><strong>2&nbsp;490 ₽</strong></div>
+                <div><span>Маржа</span><strong>614 ₽</strong></div>
+                <div><span>Марж. %</span><strong>24,7%</strong></div>
+              </div>
+              <div class="economy-rows">
+                <p><span>Себестоимость</span><b>780 ₽</b></p>
+                <p><span>Логистика и хранение</span><b>321 ₽</b></p>
+                <p><span>Комиссия и реклама</span><b>775 ₽</b></p>
+              </div>
+              <div class="mini-funnel"><span>Карточка</span><i></i><span>Корзина</span><i></i><span>Заказ</span><i></i><strong>Выкуп</strong></div>
+              <p class="route-screen__caption">Проверьте факт, измените сценарий и сразу увидите влияние цены и расходов на маржу.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature--light" id="features" aria-labelledby="replies-title">
+        <div class="feature__copy" data-reveal="text">
+          <p class="section-note">ИИ-ответы, дополнительный ускоритель</p>
+          <h2 id="replies-title">Не тратьте команду на рутину с отзывами.</h2>
+          <p>
+            Основной рост рейтинга создают диалоги с покупателями и работа с нарушающими правила отзывами. ИИ-ответы берут на себя повторяющуюся часть процесса, но остаются под вашим контролем.
+          </p>
+          <ul class="plain-list">
+            <li>Автоответ, подтверждение или выкл для каждой оценки.</li>
+            <li>Стоп-слова и вопросы покупателя не теряются в автоматизации.</li>
+            <li>Связки товаров помогают рекомендовать релевантную позицию.</li>
+          </ul>
+        </div>
+
+        <div class="review-showcase" data-ui data-reveal="panel">
+          <div class="showcase-toolbar">
+            <span class="ui-brand"><b>ST</b> Лента отзывов</span>
+            <span class="toolbar-filter">Все оценки</span>
+          </div>
+          <div class="showcase-review">
+            <div class="product-swatch product-swatch--blue" aria-hidden="true"></div>
+            <div class="showcase-review__main">
+              <div class="review-heading"><span>Товар, артикул 255095594</span><b>Оценка 4 / 5</b></div>
+              <p>«В целом понравилось, но хотелось бы больше вариантов.»</p>
+              <div class="ai-answer ai-answer--light">
+                <span>Ответ подготовлен ИИ</span>
+                <p>Спасибо за обратную связь. Мы уже работаем над расширением ассортимента и будем рады видеть вас снова.</p>
+                <div class="ui-actions"><b>Опубликовать</b><span>Другой вариант</span><span>Отклонить</span></div>
               </div>
             </div>
+          </div>
+          <div class="settings-strip">
+            <div><span>Оценка 1–3</span><b>Подтверждение</b></div>
+            <div><span>Оценка 4–5</span><b>Авто</b></div>
+            <div><span>Рекомендация товара</span><b>Включена</b></div>
+          </div>
+        </div>
+      </section>
 
-            <div class="hero-product reveal" aria-label="Обезличенный пример интерфейса STMarket">
-              <div class="product-glow" aria-hidden="true"></div>
-              <div class="dashboard-window">
-                <div class="window-topbar">
-                  <div class="window-brand"><span class="mini-mark"></span> STMarket</div>
-                  <div class="window-tabs"><span class="active">Рабочий стол</span><span>Аналитика</span></div>
-                  <div class="window-avatar">С</div>
-                </div>
-                <div class="window-body">
-                  <aside class="window-sidebar" aria-hidden="true">
-                    <span class="side-icon side-icon--active">▦</span>
-                    <span class="side-icon">◌</span>
-                    <span class="side-icon">⌁</span>
-                    <span class="side-icon">▱</span>
-                  </aside>
-                  <div class="dashboard-content">
-                    <div class="dashboard-heading">
-                      <div>
-                        <span class="dashboard-kicker">ОТЗЫВЫ · СЕГОДНЯ</span>
-                        <strong>Нужны решения</strong>
-                      </div>
-                      <span class="filter-pill">Все оценки <b>⌄</b></span>
-                    </div>
-                    <div class="dashboard-grid">
-                      <article class="review-panel">
-                        <div class="panel-title"><span>01</span> Новый отзыв <small>2 мин назад</small></div>
-                        <div class="rating"><b>★</b><b>★</b><b>★</b><b class="muted">★</b><b class="muted">★</b></div>
-                        <p>«Товар пришёл вовремя, но упаковка была помята.»</p>
-                        <div class="reply-draft">
-                          <span class="ai-badge">AI</span>
-                          <span>Черновик ответа готов</span>
-                          <button type="button" aria-label="Открыть черновик">→</button>
-                        </div>
-                      </article>
-                      <article class="profit-panel">
-                        <div class="panel-title"><span>SKU A–301</span><small>За период</small></div>
-                        <p>Операционная прибыль</p>
-                        <strong class="profit-amount">+ 184 600 ₽</strong>
-                        <div class="bar-chart" aria-hidden="true">
-                          <i style="height: 35%"></i><i style="height: 52%"></i><i style="height: 44%"></i><i style="height: 68%"></i><i style="height: 58%"></i><i style="height: 82%"></i><i class="last" style="height: 96%"></i>
-                        </div>
-                      </article>
-                      <article class="complaint-panel">
-                        <div class="panel-title"><span>Жалобы</span><small>В работе</small></div>
-                        <div class="complaint-row"><span class="status-dot status-dot--blue"></span><span>Проверка статуса</span><b>12</b></div>
-                        <div class="complaint-row"><span class="status-dot status-dot--gray"></span><span>На модерации</span><b>08</b></div>
-                      </article>
-                      <article class="trend-panel">
-                        <div class="trend-title"><span>Доля негатива</span><strong>6,2%</strong></div>
-                        <svg viewBox="0 0 300 76" role="img" aria-label="Нейтральный график тренда негатива">
-                          <path d="M0 65 C28 53 43 59 63 47 S94 56 114 35 S149 45 171 34 S207 46 228 17 S265 31 300 8" fill="none" stroke="currentColor" stroke-width="3" />
-                          <path d="M0 65 C28 53 43 59 63 47 S94 56 114 35 S149 45 171 34 S207 46 228 17 S265 31 300 8 V76 H0 Z" fill="currentColor" opacity=".09" />
-                        </svg>
-                      </article>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="float-card float-card--reply"><span class="float-card__icon">✓</span><span><small>ОТВЕТ ОТПРАВЛЕН</small>Бренд сохранил контроль</span></div>
-              <div class="float-card float-card--status"><span class="pulse-dot"></span><span><small>СТАТУС</small>Всё в одном контуре</span></div>
+      <section class="feature feature--ink" aria-labelledby="chats-title">
+        <div class="chat-showcase" data-ui data-reveal="panel">
+          <div class="chat-showcase__queue">
+            <div class="ui-topline"><span>Чаты</span><span>72 непрочитанных</span></div>
+            <div class="conversation conversation--selected"><i></i><div><b>Покупатель</b><span>Проблема с товаром</span></div><small>сейчас</small></div>
+            <div class="conversation"><i></i><div><b>Покупатель</b><span>Ожидает решения</span></div><small>12:40</small></div>
+            <div class="conversation"><i></i><div><b>Покупатель</b><span>Спасибо за помощь</span></div><small>вчера</small></div>
+          </div>
+          <div class="chat-showcase__dialogue">
+            <div class="ui-topline"><span>Диалог с покупателем</span><span class="quiet-status">автоцепочка на паузе</span></div>
+            <div class="message message--buyer">Добрый день. Не понимаю, как оформить возврат.</div>
+            <div class="message message--manager">Здравствуйте. Сейчас пришлю инструкцию и помогу по заказу.</div>
+            <div class="message message--buyer">Спасибо, получилось.</div>
+            <div class="reply-field"><span>Написать сообщение</span><b>Отправить</b></div>
+          </div>
+          <aside class="chat-showcase__context">
+            <small>Контекст отзыва</small>
+            <strong>Оценка 2 / 5</strong>
+            <p>Покупатель недоволен сроком доставки.</p>
+            <span>Автоматизация: 1 день, 14:00</span>
+          </aside>
+        </div>
+
+        <div class="feature__copy feature__copy--light" data-reveal="text">
+          <p class="section-note">Рассылки и работа с негативом</p>
+          <h2 id="chats-title">Не оставляйте негатив без живого разговора.</h2>
+          <p>
+            Запускайте последовательность сообщений для покупателей с негативной оценкой, по дню, времени и фильтру. Когда нужен человек, менеджер продолжает диалог прямо в ST Market.
+          </p>
+          <p>
+            Цель не в том, чтобы спорить с покупателем. Нужно понять причину, решить вопрос и дать ему возможность обновить оценку.
+          </p>
+        </div>
+      </section>
+
+      <section class="feature feature--rose" aria-labelledby="complaints-title">
+        <div class="feature__copy" data-reveal="text">
+          <p class="section-note">Жалобы на отзывы</p>
+          <h2 id="complaints-title">Обращение в WB начинается с контекста.</h2>
+          <p>
+            Система читает отзыв, предлагает подходящую причину жалобы и собирает текст обращения. Отдельный поток ведёт черновики для поддержки Wildberries и статусы всех отправок.
+          </p>
+          <p class="feature__fineprint">Решение по модерации всегда принимает Wildberries.</p>
+        </div>
+
+        <div class="complaint-showcase" data-ui data-reveal="panel">
+          <div class="showcase-toolbar"><span class="ui-brand"><b>ST</b> Жалобы на отзывы</span><span class="toolbar-filter">В работе</span></div>
+          <div class="complaint-showcase__body">
+            <div class="complaint-review">
+              <small>Исходный отзыв</small>
+              <p>«Товар вообще не соответствует тому, что я ожидал.»</p>
+              <span>Оценка 1 / 5</span>
             </div>
-          </section>
-
-          <section class="proof-bar container reveal" aria-label="Ключевые показатели сервиса">
-            <div><strong>1 600 000+</strong><span>отзывов прошло через систему</span></div>
-            <div><strong>1 400 000</strong><span>ответов отправлено</span></div>
-            <div><strong>до 385 902</strong><span>отзывов в год в одном WB-кейсе</span></div>
-          </section>
-        </main>
-      </section>
-
-      <section class="pain-section section container">
-        <div class="section-heading section-heading--split reveal">
-          <div>
-            <p class="eyebrow"><span></span> Знакомо?</p>
-            <h2>Вы не обязаны вручную разгребать то, что съедает прибыль магазина</h2>
-          </div>
-          <p>Не нужен ещё один отчёт ради отчёта. Нужен понятный рабочий контур — от первого отзыва до решения по товару.</p>
-        </div>
-        <div class="pain-grid">
-          <article class="pain-card reveal">
-            <span class="card-number">01</span>
-            <div class="pain-icon"><span class="star-burst">✦</span></div>
-            <h3>Негатив висит на карточке без ответа</h3>
-            <p>Пока команда добирается до отзыва, покупатель уже сделал вывод о бренде.</p>
-          </article>
-          <article class="pain-card reveal">
-            <span class="card-number">02</span>
-            <div class="pain-icon"><span class="chat-shape"></span></div>
-            <h3>Покупатель написал в чат слишком рано для вас</h3>
-            <p>Сообщение есть, но команда увидела его, когда диалог уже остыл.</p>
-          </article>
-          <article class="pain-card reveal">
-            <span class="card-number">03</span>
-            <div class="pain-icon"><span class="flag-shape"></span></div>
-            <h3>Жалобы теряются в операционке</h3>
-            <p>Отзывы, которые можно оспорить, не должны исчезать в списках и чатах.</p>
-          </article>
-          <article class="pain-card reveal">
-            <span class="card-number">04</span>
-            <div class="pain-icon"><span class="chart-shape"><i></i><i></i><i></i></span></div>
-            <h3>Выручка есть, а сколько осталось — неясно</h3>
-            <p>Логистика, реклама и возвраты превращают красивый отчёт WB в догадку.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="flow-section section" id="how-it-works">
-        <div class="container">
-          <div class="section-heading section-heading--center reveal">
-            <p class="eyebrow"><span></span> Как работает STMarket</p>
-            <h2>Один контур работы вместо десяти вкладок</h2>
-            <p>Каждое действие остаётся связано с товаром, покупателем и итоговым решением — без ручной сборки картины из разных сервисов.</p>
-          </div>
-          <div class="workflow reveal" aria-label="Цепочка работы STMarket">
-            <article class="workflow-step">
-              <span class="workflow-index">01</span>
-              <span class="workflow-icon">★</span>
-              <strong>Отзыв покупателя</strong>
-              <small>Система видит новый сигнал</small>
-            </article>
-            <span class="workflow-arrow">→</span>
-            <article class="workflow-step workflow-step--accent">
-              <span class="workflow-index">02</span>
-              <span class="workflow-icon">✦</span>
-              <strong>ИИ готовит ответ</strong>
-              <small>Черновик в вашем тоне</small>
-            </article>
-            <span class="workflow-arrow">→</span>
-            <article class="workflow-step">
-              <span class="workflow-index">03</span>
-              <span class="workflow-icon">✓</span>
-              <strong>Авто или подтверждение</strong>
-              <small>Правила задаёте вы</small>
-            </article>
-            <span class="workflow-arrow">→</span>
-            <article class="workflow-step">
-              <span class="workflow-index">04</span>
-              <span class="workflow-icon">◌</span>
-              <strong>Диалог с покупателем</strong>
-              <small>Ситуация не теряется</small>
-            </article>
-            <span class="workflow-arrow">→</span>
-            <article class="workflow-step">
-              <span class="workflow-index">05</span>
-              <span class="workflow-icon">⚐</span>
-              <strong>Жалоба при нарушении</strong>
-              <small>Статусы под контролем</small>
-            </article>
-            <span class="workflow-arrow">→</span>
-            <article class="workflow-step">
-              <span class="workflow-index">06</span>
-              <span class="workflow-icon">↗</span>
-              <strong>Решение по товару</strong>
-              <small>На основе причин и цифр</small>
-            </article>
-          </div>
-          <div class="flow-note reveal"><span></span> Не генератор текстов и не ещё один дашборд. Рабочий кабинет для решений по магазину.</div>
-        </div>
-      </section>
-
-      <section class="features-section section container" id="features">
-        <div class="section-heading section-heading--split reveal">
-          <div>
-            <p class="eyebrow"><span></span> Возможности</p>
-            <h2>Система работает там, где команда обычно теряет фокус</h2>
-          </div>
-          <p>Репутация, коммуникация и деньги соединены в одном интерфейсе, чтобы видеть не разрозненные события, а картину по магазину.</p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card feature-card--dark reveal">
-            <div class="feature-card__top"><span class="feature-tag">01 · ОТЗЫВЫ</span><span class="feature-symbol">✦</span></div>
-            <h3>Карточка не остаётся без голоса</h3>
-            <p>Ответы на отзывы с режимами «авто», «на подтверждении» и «выкл» для каждой оценки. Бренд сохраняет контроль, а команда не копирует шаблоны весь день.</p>
-            <div class="response-demo" aria-hidden="true">
-              <div class="response-demo__head"><span>Правило для оценки</span><b>4 ★</b></div>
-              <div class="response-demo__options"><span class="selected">Авто</span><span>На подтверждении</span><span>Выкл</span></div>
-              <div class="response-demo__draft"><i>AI</i><span>Черновик готов для проверки</span><b>→</b></div>
+            <div class="complaint-decision">
+              <small>Предлагаемая причина</small>
+              <strong>Отзыв не относится к товару</strong>
+              <p>Текст не содержит фактов о характеристиках или использовании товара.</p>
+              <b>Сформировать обращение</b>
             </div>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-card__top"><span class="feature-tag">02 · АНАЛИТИКА</span><span class="feature-symbol">↗</span></div>
-            <h3>Негатив становится задачей, а не проблемой на потом</h3>
-            <p>Видите, на что жалуются покупатели, где растёт доля негатива и какие отзывы стоит отправить на модерацию.</p>
-            <div class="analysis-demo" aria-hidden="true">
-              <div class="analysis-demo__left"><span>Главные причины</span><b>Упаковка</b><b>Размер</b><b>Комплектация</b></div>
-              <div class="analysis-demo__chart"><span>ТРЕНД НЕГАТИВА</span><svg viewBox="0 0 180 72"><path d="M0 59 C24 45 31 54 49 41 S82 49 101 27 S133 41 151 14 S168 22 180 4" fill="none" stroke="currentColor" stroke-width="3" /></svg><small>по неделям</small></div>
+          </div>
+          <div class="support-draft support-draft--light">
+            <span>Текст для поддержки WB</span>
+            <p>Просим проверить отзыв и соответствие его содержания правилам публикации на площадке.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature--economics" aria-labelledby="economics-title">
+        <div class="economics-showcase" data-ui data-reveal="panel">
+          <div class="showcase-toolbar"><span class="ui-brand"><b>ST</b> Юнитка · Факт → Сценарий</span><span>Сегодня</span></div>
+          <div class="economics-showcase__top">
+            <div><span>Цена</span><strong>2&nbsp;490 ₽</strong></div>
+            <div><span>Операционная маржа</span><strong>614 ₽</strong></div>
+            <div><span>Маржинальность</span><strong>24,7%</strong></div>
+          </div>
+          <div class="economics-showcase__bottom">
+            <div class="economics-table">
+              <p><span>Себестоимость</span><b>780 ₽</b></p>
+              <p><span>Упаковка</span><b>95 ₽</b></p>
+              <p><span>Логистика WB</span><b>226 ₽</b></p>
+              <p><span>Комиссия и реклама</span><b>775 ₽</b></p>
             </div>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-card__top"><span class="feature-tag">03 · ДИАЛОГИ</span><span class="feature-symbol">◌</span></div>
-            <h3>Покупатель не теряется после отзыва</h3>
-            <p>Чаты и сценарии общения помогают вовремя вернуться в диалог, понять проблему и довести ситуацию до решения.</p>
-            <div class="chat-demo" aria-hidden="true">
-              <div class="chat-demo__message chat-demo__message--in"><span></span>Покупатель оставил вопрос по заказу</div>
-              <div class="chat-demo__path"><i></i><span>Правило: вернуться в диалог</span><i></i></div>
-              <div class="chat-demo__message chat-demo__message--out">Команда видит контекст и следующий шаг <span></span></div>
+            <div class="jam-funnel">
+              <small>Джем, путь к выкупу</small>
+              <p><span>Карточка</span><b style="--bar: 100%"></b><em>100%</em></p>
+              <p><span>Корзина</span><b style="--bar: 62%"></b><em>62%</em></p>
+              <p><span>Заказ</span><b style="--bar: 37%"></b><em>37%</em></p>
+              <p><span>Выкуп</span><b style="--bar: 28%"></b><em>28%</em></p>
             </div>
-          </article>
-          <article class="feature-card feature-card--blue reveal">
-            <div class="feature-card__top"><span class="feature-tag">04 · ФИНАНСЫ</span><span class="feature-symbol">₽</span></div>
-            <h3>Реальная прибыль — не догадка</h3>
-            <p>Считайте деньги по SKU после комиссии, логистики, возвратов, рекламы, налогов и всех списаний Wildberries.</p>
-            <div class="finance-demo" aria-hidden="true">
-              <div class="finance-demo__line"><span>Выручка</span><b>— расходы WB</b></div>
-              <div class="finance-demo__line"><span>Операционная прибыль</span><strong>видна по SKU</strong></div>
-              <div class="finance-demo__bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="control-section section">
-        <div class="container control-layout">
-          <div class="control-copy reveal">
-            <p class="eyebrow eyebrow--light"><span></span> Контроль у вас</p>
-            <h2>Вы задаёте правила —<br />система делает рутину</h2>
-            <p>Автоматизация не должна быть чёрным ящиком. Каждое правило можно проверить, изменить и остановить.</p>
-            <ul class="control-list">
-              <li><span>01</span>Автоответы только там, где вы разрешили.</li>
-              <li><span>02</span>Негатив можно оставить на ручном подтверждении.</li>
-              <li><span>03</span>Стоп-слова переводят сложный отзыв в очередь.</li>
-              <li><span>04</span>Черновик можно изменить или перегенерировать.</li>
-              <li><span>05</span>По каждому действию есть статус и журнал.</li>
-            </ul>
-          </div>
-          <div class="control-board reveal" aria-label="Пример настройки правил">
-            <div class="control-board__header"><div><small>НАСТРОЙКА ПРАВИЛ</small><strong>Отзывы · основной кабинет</strong></div><span class="online-label"><i></i> активно</span></div>
-            <div class="rule-row"><div><span class="rule-stars">★★★★★</span><small>Оценка 5</small></div><b class="rule-mode rule-mode--auto">Авто <i>✓</i></b></div>
-            <div class="rule-row"><div><span class="rule-stars">★★★★<em>★</em></span><small>Оценка 4</small></div><b class="rule-mode rule-mode--auto">Авто <i>✓</i></b></div>
-            <div class="rule-row"><div><span class="rule-stars">★★★<em>★★</em></span><small>Оценка 3</small></div><b class="rule-mode rule-mode--review">На подтверждении <i>→</i></b></div>
-            <div class="rule-row"><div><span class="rule-stars">★★<em>★★★</em></span><small>Оценка 1–2</small></div><b class="rule-mode rule-mode--review">На подтверждении <i>→</i></b></div>
-            <div class="rule-footer"><span><i></i> Стоп-слова включены</span><button type="button">Открыть журнал <b>↗</b></button></div>
           </div>
         </div>
-      </section>
 
-      <section class="cases-section section container" id="cases">
-        <div class="section-heading section-heading--split reveal">
-          <div>
-            <p class="eyebrow"><span></span> Кейсы</p>
-            <h2>Когда поток большой, реакция не должна становиться случайностью</h2>
-          </div>
-          <p>Обезличенные показатели реальных магазинов. Мы не приписываем ответам то, чего данные не подтверждают.</p>
-        </div>
-        <div class="case-grid">
-          <article class="case-card case-card--large reveal">
-            <div class="case-card__meta"><span>WILDBERRIES · 12 МЕСЯЦЕВ</span><span>01</span></div>
-            <h3>Когда отзывов больше, чем может обработать команда</h3>
-            <div class="case-card__figures"><div><strong>385 902</strong><span>отзыва</span></div><span class="figure-arrow">→</span><div><strong>322 872</strong><span>ответа отправлено</span></div></div>
-            <p>При ручной обработке даже по 1–2 минуты на ответ это 5 400–10 800 часов работы в год.</p>
-            <div class="case-grid-lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </article>
-          <article class="case-card case-card--blue reveal">
-            <div class="case-card__meta"><span>OZON · НЕГАТИВНЫЕ ОТЗЫВЫ</span><span>02</span></div>
-            <h3>Негатив не остаётся висеть без реакции</h3>
-            <div class="case-score"><strong>99,8%</strong><span>2 086 из 2 090 отзывов<br />с оценкой от 1 до 3 звёзд получили ответ</span></div>
-            <div class="score-ring" aria-hidden="true"><span>●</span></div>
-          </article>
-          <article class="case-card reveal">
-            <div class="case-card__meta"><span>OZON · ПОТОК ОТЗЫВОВ</span><span>03</span></div>
-            <h3>Сервис не ломается в сезон</h3>
-            <div class="case-score"><strong>51 704</strong><span>ответа отправлены<br />на 51 713 отзывов</span></div>
-            <p class="case-card__bottom">Практически каждый покупатель получил реакцию от бренда.</p>
-          </article>
+        <div class="feature__copy" data-reveal="text">
+          <p class="section-note">Юнит-экономика, аналитика и «Джем»</p>
+          <h2 id="economics-title">Рейтинг важен. Маржа отвечает за бизнес.</h2>
+          <p>
+            Получайте фактические показатели магазина и каждого товара в одном месте. Меняйте цену, себестоимость, логистику или расходы в сценарии и сразу видьте, что происходит с прибылью.
+          </p>
+          <p>
+            В «Джеме» отслеживайте путь карточка → корзина → заказ → выкуп, конверсии и показатели по товарам.
+          </p>
         </div>
       </section>
 
-      <section class="setup-section section">
-        <div class="container setup-layout">
-          <div class="setup-visual reveal" aria-hidden="true">
-            <div class="setup-visual__circle"></div>
-            <div class="setup-visual__card setup-visual__card--one"><span>01</span><b>Кабинет WB</b><i>✓</i></div>
-            <div class="setup-visual__card setup-visual__card--two"><span>02</span><b>Ваши правила</b><i>✓</i></div>
-            <div class="setup-visual__card setup-visual__card--three"><span>03</span><b>Рабочий контур</b><i>→</i></div>
-          </div>
-          <div class="setup-copy reveal">
-            <p class="eyebrow"><span></span> Запуск</p>
-            <h2>Подключение<br />без хаоса</h2>
-            <p>Начинаем не с «настроек ради настроек», а с процессов, которые сейчас забирают у команды больше всего времени.</p>
-            <ol class="setup-steps">
-              <li><span>1</span><div><strong>Подключаете кабинет Wildberries.</strong><p>Без прыжков между разными рабочими окнами.</p></div></li>
-              <li><span>2</span><div><strong>Выбираете правила.</strong><p>Что отправлять автоматически, а что оставлять на подтверждение.</p></div></li>
-              <li><span>3</span><div><strong>Работаете в одном контуре.</strong><p>Отзывы, диалоги, жалобы и экономика остаются перед глазами.</p></div></li>
-            </ol>
-          </div>
+      <section class="proof-run" id="numbers" aria-labelledby="proof-title">
+        <h2 id="proof-title">Система уже делает эту работу в масштабе.</h2>
+        <div class="proof-run__figures" data-reveal="text">
+          <p><strong>1&nbsp;600&nbsp;000+</strong><span>отзывов прошли через ST Market</span></p>
+          <p><strong>1&nbsp;400&nbsp;000</strong><span>ответов уже отправлено покупателям</span></p>
         </div>
       </section>
 
-      <section class="final-cta container reveal">
-        <div class="final-cta__dots" aria-hidden="true"></div>
-        <div>
-          <p class="eyebrow eyebrow--light"><span></span> Разбор кабинета</p>
-          <h2>Покажем, где ваш магазин теряет время, доверие и деньги</h2>
-          <p>На разборе покажем, какие процессы можно снять с команды уже сейчас.</p>
+      <section class="faq section-light" id="faq" aria-labelledby="faq-title">
+        <div class="faq__intro" data-reveal="text">
+          <p class="section-note">Вопросы</p>
+          <h2 id="faq-title">Всё, что важно знать до старта.</h2>
         </div>
-        <a class="button button--primary" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Разобрать мой кабинет <span class="button-arrow">↗</span></a>
-      </section>
-
-      <section class="faq-section section container" id="faq">
-        <div class="section-heading reveal">
-          <p class="eyebrow"><span></span> FAQ</p>
-          <h2>Вопросы, которые стоит задать до подключения</h2>
-        </div>
-        <div class="faq-list reveal">
+        <div class="faq__list" data-reveal="row">
           <details>
-            <summary>Можно ли не доверять ответы полностью нейросети?<span>+</span></summary>
-            <p>Да. Для каждой оценки можно выбрать режим: отправлять автоматически, отправлять только после вашего подтверждения или не отвечать. Черновик можно отредактировать, перегенерировать, опубликовать или отклонить.</p>
+            <summary>Можно ли включить автоответы не на все отзывы?</summary>
+            <div><p>Да. Для каждой оценки можно выбрать автоответ, подтверждение менеджером или полностью выключить автоматизацию. Дополнительно работают стоп-слова и правила для отзывов без текста.</p></div>
           </details>
           <details>
-            <summary>Что происходит с негативными отзывами?<span>+</span></summary>
-            <p>Их можно оставлять на ручном подтверждении, направлять в очередь через стоп-слова и анализировать по причинам. Если отзыв нарушает правила площадки, его можно вести в очереди жалоб со статусами и журналом действий.</p>
+            <summary>Как работает общение с покупателями после негатива?</summary>
+            <div><p>Вы выбираете фильтр и последовательность сообщений. Покупатель получает сообщение, а когда нужен человек, менеджер подхватывает диалог в разделе «Чаты» с контекстом отзыва.</p></div>
           </details>
           <details>
-            <summary>Можно ли работать с несколькими кабинетами?<span>+</span></summary>
-            <p>Да. STMarket позволяет работать с несколькими кабинетами продавца в одном интерфейсе.</p>
+            <summary>ST Market гарантирует удаление отзыва?</summary>
+            <div><p>Нет. Сервис анализирует контекст, предлагает основание, готовит обращение и ведёт статусы. Решение об одобрении жалобы принимает Wildberries.</p></div>
           </details>
           <details>
-            <summary>Как STMarket считает прибыль?<span>+</span></summary>
-            <p>По товарам и по реализации: с учётом себестоимости, упаковки, логистики, комиссии, скидок, рекламы, возвратов, налогов, остатков и списаний Wildberries. Отдельно можно сверять расчётное и фактическое начисление логистики.</p>
+            <summary>Что можно увидеть в юнит-экономике?</summary>
+            <div><p>Фактическую цену, маржу, остатки и расходы по товарам. В сценарии можно менять ключевые параметры и сразу оценивать влияние на экономику.</p></div>
           </details>
           <details>
-            <summary>Удаляет ли сервис плохие отзывы?<span>+</span></summary>
-            <p>Нет, сервис не обещает удаление отзывов. Он помогает не пропускать отзывы, которые можно оспорить, отправлять жалобы и держать статус каждой из них под контролем.</p>
-          </details>
-          <details>
-            <summary>Подходит ли сервис небольшому магазину?<span>+</span></summary>
-            <p>Подходит, если отзывы, чаты и финансовая картина уже забирают внимание владельца или команды. На разборе можно оценить, какие процессы есть смысл подключать именно сейчас.</p>
+            <summary>С чего начать?</summary>
+            <div><p>Напишите в Telegram. Разберём текущую работу с отзывами и подскажем, с какого сценария получить самый быстрый результат в вашем магазине.</p></div>
           </details>
         </div>
       </section>
 
-      <footer class="site-footer">
-        <div class="container site-footer__inner">
-          <a class="brand" href="#top" aria-label="STMarket — на главную"><span class="brand-mark"><i></i><i></i></span><span>ST<span>Market</span></span></a>
-          <p>Рабочий кабинет продавца Wildberries</p>
-          <div><a href="https://app.sergeevtech.ru/login">Войти</a><a href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Telegram ↗</a></div>
+      <section class="closing" aria-labelledby="closing-title">
+        <div data-reveal="text">
+          <p>ST Market для вашего кабинета Wildberries</p>
+          <h2 id="closing-title">Отзывы могут возвращать деньги.</h2>
+          <a class="button button--closing" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Разобрать мой магазин</a>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer__top">
+        <a class="brand brand--footer" href="#top"><span class="brand__mark" aria-hidden="true"><i></i><i></i></span><span>ST Market</span></a>
+        <a class="text-link" href="https://app.sergeevtech.ru/">Войти в кабинет</a>
+        <a class="text-link" href="https://t.me/zabota_stmarket" target="_blank" rel="noreferrer">Telegram</a>
+      </div>
+      <p class="footer__wordmark" aria-label="ST Market">ST MARKET</p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
